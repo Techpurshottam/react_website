@@ -21,7 +21,8 @@ body {
 
 @media screen and (max-width: 767px) {
   header.fixed-top .col-md-2.col-xs-2.col-sm-2.logo img {
-    padding-bottom: 15px;
+    text-align: center;
+    padding-bottom: 25px;
   }
 
   .hero img {
@@ -136,7 +137,13 @@ form.search-form {
   box-shadow: none;
 }
 header.fixed-top .col-md-2.col-xs-2.col-sm-2.logo {
-  padding: 4px 0 0;
+  padding: 0 0 0;
+  padding-bottom: ;
+}
+
+header.fixed-top .col-md-2.col-xs-2.col-sm-2.logo img {
+  height: 40px;
+  width: 150px;
 }
 
 /*-----------------------------------Main Content--------------------------------------*/
@@ -182,6 +189,7 @@ header.fixed-top .col-md-2.col-xs-2.col-sm-2.logo {
   vertical-align: middle;
   align-items: center;
   float: left;
+  height: 50px;
 }
 .second-sec {
   position: relative;
@@ -211,7 +219,7 @@ header.fixed-top .col-md-2.col-xs-2.col-sm-2.logo {
   width: 15%;
   margin: 0px auto;
   position: absolute;
-  margin-bottom: 1010px;
+  margin-bottom: 1065px;
   top: -60;
   left: 0;
   right: 0;
@@ -219,6 +227,7 @@ header.fixed-top .col-md-2.col-xs-2.col-sm-2.logo {
   bottom: 0;
   height: fit-content;
   border-radius: 16px;
+  /* border: 1px solid black; */
 }
 .main-content {
   top: 0;
@@ -441,6 +450,11 @@ footer ul li a {
   padding: 20px 0px 27px;
 }
 
+.container.logo img {
+  height: 100px;
+  width: 180px;
+}
+
 ul.fot-logo-sec li {
   display: inline;
 }
@@ -554,7 +568,7 @@ ul.social-icon li a {
   }
 
   .middle-logo {
-    top: -29px;
+    top: -10px;
   }
   .second-sec h3.heading {
     font-size: 20px;
@@ -673,11 +687,17 @@ ul.social-icon li a {
     float: left;
     max-width: 100%;
   }
+  .middle-logo img {
+    height: 30px;
+  }
 }
 
 @media screen and (min-width: 499px) and (max-width: 599px) {
   .middle-logo {
     width: 35%;
+  }
+  .middle-logo img {
+    height: 30px;
   }
 }
 

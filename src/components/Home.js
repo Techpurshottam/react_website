@@ -25,7 +25,7 @@ function Home() {
         <div className="container">
           <div className="section-content">
             <div className="middle-logo">
-              <img src="img/logo.png" />
+              <img src="img/logo.jpeg" />
             </div>
             <h3 className="heading">Reconnect to your health.</h3>
             <div className="col-md-6 health-sec">

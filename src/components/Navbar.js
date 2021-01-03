@@ -6,7 +6,7 @@ function Navbar() {
         <header className="fixed-top">
         <div className="container-fluid">
           <div className="col-md-2 col-xs-2 col-sm-2 logo">	
-            <a href="/"><img src="img/header-logo.png" /></a>
+            <a href="/"><img src="img/logo.jpeg" /></a>
           </div>
           <div className="col-md-3 col-xs-3 col-sm-3">
             <form className="search-form" role="search">

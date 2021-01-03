@@ -19,7 +19,7 @@ function Footer() {
         <div className="middle-footer">
           <div className="row">
             <div className="container logo">
-              <img src="img/logo.png" />
+              <img src="img/logo.jpeg" />
             </div>
           </div>
           <div className="row">
