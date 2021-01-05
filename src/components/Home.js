@@ -1,5 +1,6 @@
 import React from 'react'
-import Slider from "react-slick";
+import Slider from "react-slick"
+import {Link} from 'react-router-dom'
 
 function Home() {
 
@@ -13,7 +14,51 @@ function Home() {
    
 
     return (
+
+      <div>
+
+        {/* header */}
         
+        <header className="fixed-top">
+        <div className="container-fluid">
+          <div className="col-md-2 col-xs-2 col-sm-2 logo">	
+            <a href="/"><img src="img/logo.jpeg" /></a>
+          </div>
+          <div className="col-md-3 col-xs-3 col-sm-3">
+            <form className="search-form" role="search">
+              <div className="form-group md-form mt-0 pt-1 waves-light">
+                <i className="fas fa-search" aria-hidden="true" /><input type="text" className="form-control" placeholder="Search" />
+              </div>
+            </form>
+          </div>
+          <div className="col-md-7 col-xs-7 col-sm-7">
+            <ul className="nav navbar-nav nav-flex-icons ml-auto">
+              <li className="nav-item">
+               <a className="nav-link how-to-join"> 
+               <span className="clearfix d-sm-inline-block">
+                 How To Join
+                 </span> 
+                 </a>
+              </li>
+              <li className="nav-item">
+                <a className="nav-link"> <Link to="/cart"><i className="fa fa-shopping-cart" /> </Link> </a>
+              </li>
+              <li className="nav-item dropdown">
+                <a className="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i className="fa fa-user" /></a>
+                <div className="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownMenuLink">
+                  <p>I have an Abilis account.</p>
+                  <a className="dropdown-item" href="#">How To Join</a>
+                  <a className="dropdown-item" href="#">Another action</a>
+                  <a className="dropdown-item" href="#">Something else here</a>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </header>
+  
+       {/* Main */}
+
       <div className="main-content">
       <div className="row hero-banner">
         <div className="hero">
@@ -105,7 +150,7 @@ function Home() {
           
           <img src="img/slider-banner.png" style={{width:'100%'}} />
           <div className="container">
-            <div className="text"><h1>The Advantages Of Abbils</h1>
+            <div className="text"><h1>The Advantages Of Dr.Farma</h1>
               <p>  You can access your medication plan when you need it for better monitoring of your treatment </p>
               <a href="/"> Learn more</a></div>
           </div>
@@ -117,7 +162,7 @@ function Home() {
           
           <img src="img/slider-banner.png" style={{width:'100%'}} />
           <div className="container">
-            <div className="text"><h1>The Advantages Of Abbils</h1>
+            <div className="text"><h1>The Advantages Of Dr.Farma</h1>
               <p>  You can access your medication plan when you need it for better monitoring of your treatment </p>
               <a href="/"> Learn more</a></div>
           </div>
@@ -129,7 +174,7 @@ function Home() {
          
           <img src="img/slider-banner.png" style={{width:'100%'}} />
           <div className="container">
-            <div className="text"><h1>The Advantages Of Abbils</h1>
+            <div className="text"><h1>The Advantages Of Dr.Farma</h1>
               <p>  You can access your medication plan when you need it for better monitoring of your treatment </p>
               <a href="/"> Learn more</a></div>
           </div>
@@ -243,14 +288,99 @@ function Home() {
           </div>
         </div>
       </div>	
-      {/*    <span class="cms-oval-shapes">  
-              <img src="img/oval-shape.svg">
-          </span>
-
-          
-              <!--<img src="img/hero-banner.png">*/}
-      {/*	<span class="cms-oval-shape">      <img src="img/oval-shape.svg"></span>*/}
+      
     </div>
+
+
+    {/* Footer */}
+    <footer>
+        <div className="row top-footer">
+          <div className="container">
+            <div className="col-md-5" style={{verticalAlign: 'middle'}}>
+              <div className="sc-kfGgVZ ewBkLQ"><div className="sc-esjQYD cDJIof">Paiement sécurisé par Datatrans</div>
+                <div className="sc-kIPQKe hNJTwe">La protection de vos données est la priorité d'Abilis.</div>
+              </div>
+            </div>
+            <div className="col-md-7">
+              <Link to="/checkout"><img src="img/payment-card.png" /> </Link>
+            </div>
+          </div>
+        </div>
+        <div className="middle-footer">
+          <div className="row">
+            <div className="container logo">
+              <img src="img/logo.jpeg" />
+            </div>
+          </div>
+          <div className="row">
+            <div className="container">
+              <div className="col-md-3 col-xs-6">
+                <h6>Know us</h6>
+                <ul>
+                  <li><a href="!#"><Link to="/about">About Dr.Farma</Link></a></li>
+                  <li><a href="!#"><Link to="/contact">Contact</Link></a></li>
+                </ul>
+              </div>
+              <div className="col-md-3 col-xs-6">
+                <h6>Dr.Farma</h6>
+                <ul>
+                  <li><a href="!#"><Link to="/wellness">News</Link></a></li>
+                  <li><a href="!#"><Link to="/singleproduct">How to join</Link></a></li>
+                  <li><a href="!#"><Link to="/advantage">Advantages</Link></a></li>
+                  <li><a href="!#"><Link to="/faq">Faq</Link></a></li>
+                </ul>
+              </div>
+              <div className="col-md-3 col-xs-6">
+                <h6>Legal Notice</h6>
+                <ul>
+                  <li><a href="!#"><Link to="/terms">Term and Conditions</Link></a></li>
+                  <li><a href="!#"><Link to="/privacy">Confidentiality and data protection</Link></a></li>
+                </ul>
+              </div>
+              <div className="col-md-3 col-xs-6">
+                <h6>Health professionals</h6>
+                <ul>
+                  <li><a href="!#">To become partner</a></li>
+                  <li><a href="!#"><Link to="/login">To log in</Link></a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className="third-sec-footer">
+          <div className="container">
+            <div className="col-md-7 col-xs-12 subscriber">
+              <p>Stay informed with our Dr.Farma newsletter <a href="/" className="register">
+              <Link to="/register">Register</Link></a></p>
+            </div>
+            <div className="col-md-5 col-xs-12 social-sec">
+              <p>Follow Us </p>
+              <span><ul className="social-icon">
+                  <li><a href="/"><i className="fab fa-facebook-f" /></a></li>
+                  <li><a href="/"><i className="fab fa-twitter" /></a></li>
+                  <li><a href="/"><i className="fab fa-instagram" /></a></li>
+                  <li><a href="/"><i className="fab fa-linkedin-in" /></a></li>
+                </ul></span></div>	
+          </div>
+        </div>
+        <div className="last-sec">
+          <div className="container">
+            <b>The security of your data is guaranteed.</b>
+            <p>Protecting your personal data is one of Abilis' priorities. The identification and authentication system put in place, based on the use of an electronic identifier certified by the Confederation, guarantees that only you can access your sensitive data. Located in Switzerland, the secure datacenters that host this data benefit from certifications attesting to compliance with legislation on IT security and data protection.</p>
+          </div>
+          <ul className="fot-logo-sec">
+            <li><a href="/"><img src="img/fot-logo-1.png" /></a></li>
+            <li><a href="/"><img src="img/fot-logo-2.png" /></a></li>
+            <li><a href="/"><img src="img/fot-logo-3.png" /></a></li>
+          </ul>
+        </div>
+        <div className="copyright">
+          <p>© drro.ro </p>
+        </div>
+      </footer>
+
+    </div>
+
     )
 }
 
