@@ -74,10 +74,10 @@ function Checkout() {
                       <h3>Payment</h3>
                       <label htmlFor="fname">Accepted Cards</label>
                       <div className="icon-container">
-                        <i className="fa fa-cc-visa" style={{color: 'navy'}} />
-                        <i className="fa fa-cc-amex" style={{color: 'blue'}} />
-                        <i className="fa fa-cc-mastercard" style={{color: 'red'}} />
-                        <i className="fa fa-cc-discover" style={{color: 'orange'}} />
+                        <i className="fa fa-cc-visa"  style={{color: 'navy'}} />
+                        <i className="fa fa-cc-amex" id="pay" style={{color: 'blue'}} />
+                        <i className="fa fa-cc-mastercard" id="pay" style={{color: 'red'}} />
+                        <i className="fa fa-cc-discover" id="pay" style={{color: 'orange'}} />
                       </div>
                       <label htmlFor="cname">Name on Card</label>
                       <input type="text" id="cname" name="cardname" placeholder="John More Doe" />

@@ -20,9 +20,10 @@ function App() {
   return (
    
     <>
-        
+       
 
        <Switch>
+
          <Route exact path="/" component={Home}/>
          <Route path="/login" component={Login} />
          <Route path="/register" component={Register} />
@@ -37,11 +38,6 @@ function App() {
          <Route path="/singleproduct" component={SingleProduct} />
          <Route path="/wellness" component={Wellness} />
 
-
-
-
-
-         
        </Switch>
     
       

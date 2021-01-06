@@ -246,16 +246,6 @@ header.fixed-top .col-md-2.col-xs-2.col-sm-2.logo {
   border-radius: 20px;
 }
 
-/*.second-sec .cms-oval-shape {
-    bottom: 90px;
-    left: 15px;
-    border-left: 3px solid #f0f3fa;
-    border-right: 3px solid #f0f3fa;
-    width: -webkit-calc(100% + 6px);
-    width: -moz-calc(100% + 6px);
-    width: calc(93.1% + 6px);
-    overflow-x: hidden;
-}*/
 .two-sec img {
   width: 100%;
   float: left;
@@ -266,15 +256,10 @@ header.fixed-top .col-md-2.col-xs-2.col-sm-2.logo {
   object-position: center;
   min-height: 13rem !important;
   border-radius: 778px/98px;
-  /* border-bottom-left-radius: 79px; */
+
   border-top-right-radius: 50px;
   border-top-left-radius: 50px;
 }
-/*.second-sec .cms-oval-shape img {
-    width: 100%;
-    left: 0;
-
-}*/
 
 h3.title {
   position: absolute;
@@ -355,7 +340,6 @@ img {
   vertical-align: middle;
 }
 
-/* Slideshow container */
 .slideshow-container {
   max-width: 100%;
   position: relative;
@@ -364,7 +348,6 @@ img {
   float: left;
 }
 
-/* Next & previous buttons */
 .prev,
 .next {
   cursor: pointer;
@@ -381,19 +364,16 @@ img {
   user-select: none;
 }
 
-/* Position the "next button" to the right */
 .next {
   right: 0;
   border-radius: 3px 0 0 3px;
 }
 
-/* On hover, add a black background color with a little bit see-through */
 .prev:hover,
 .next:hover {
   background-color: rgba(0, 0, 0, 0.8);
 }
 
-/* Caption text */
 .text {
   color: #f2f2f2;
   font-size: 15px;
@@ -419,7 +399,7 @@ img {
   border-radius: 50px;
   color: #fff;
 }
-/* Number text (1/3 etc) */
+
 .numbertext {
   color: #f2f2f2;
   font-size: 12px;
@@ -428,7 +408,6 @@ img {
   top: 0;
 }
 
-/* The dots/bullets/indicators */
 .dot {
   cursor: pointer;
   height: 15px;
@@ -440,10 +419,6 @@ img {
   transition: background-color 0.6s ease;
   position: relative;
   bottom: 55px;
-  /* left: 0; */
-  /* right: 0; */
-  /* z-index: 11111; */
-  /* text-align: center !important; */
 }
 
 .active,
@@ -451,7 +426,6 @@ img {
   background-color: #717171;
 }
 
-/* Fading animation */
 .fade {
   -webkit-animation-name: fade;
   -webkit-animation-duration: 1.5s;
@@ -477,7 +451,6 @@ img {
   }
 }
 
-/* On smaller screens, decrease text size */
 @media only screen and (max-width: 300px) {
   .prev,
   .next,
@@ -495,7 +468,6 @@ span.cms-oval-shapes {
   right: 0;
 }
 .heros {
-  /* height: 100px !important; */
   position: relative;
   top: 0;
   right: 0;
@@ -568,7 +540,6 @@ form.contact {
 .contact-us {
   width: 70%;
   margin: 27px auto 20px;
-  /* float: left; */
 }
 
 /********************************************** Wellness ********************************************/
@@ -1538,7 +1509,7 @@ label {
   width: 100%;
 }
 
-<!--.summary-delivery-selection {
+.summary-delivery-selection {
   background-color: #ccc;
   border: 1px solid #aaa;
   border-radius: 4px;
@@ -1547,7 +1518,8 @@ label {
   height: 34px;
   width: 100%;
 }
--- > .value-button {
+
+.value-button {
   display: inline-block;
   border: 1px solid #ddd;
   margin: 0px;
@@ -1620,11 +1592,34 @@ input[type='number']::-webkit-outer-spin-button {
 @media screen and (max-width: 767px) {
   header.fixed-top .col-md-2.col-xs-2.col-sm-2.logo img {
     text-align: center;
-    padding-bottom: 25px;
+    padding-bottom: 15px;
+    object-fit: cover;
+    object-position: top;
+  }
+
+  .col-md-3 {
+    margin-top: 10px;
+  }
+  .col-md-7 {
+    margin-top: 10px;
   }
 
   .hero img {
     height: 240px !important;
+  }
+
+  .col-md-9 {
+    margin-top: 20px;
+  }
+  .col-md-3 {
+    margin-bottom: 10px;
+  }
+
+  .single-product {
+    margin-top: 160px;
+  }
+  .single-product-content {
+    margin-top: 50px;
   }
 }
 
@@ -2000,6 +1995,7 @@ footer {
   width: 100%;
   float: left;
   background: #14243e;
+  margin-top: auto;
 }
 .row.top-footer {
   background: #f0f3fa;
@@ -2162,7 +2158,9 @@ ul.social-icon li a {
     bottom: 24px;
   }
   .middle-logo img {
-    padding: 0px 59px;
+    padding: 0px 0px;
+    object-fit: cover;
+    object-position: initial;
   }
 
   .middle-logo {

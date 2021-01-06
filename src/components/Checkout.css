@@ -45,6 +45,10 @@ label {
   font-size: 24px;
 }
 
+#pay {
+  margin-left: 10px;
+}
+
 .btn {
   background-color: #4caf50;
   color: white;
@@ -85,6 +89,11 @@ span.price {
   }
   .col-25 {
     margin-bottom: 20px;
+  }
+
+  .row {
+    margin-top: 20px;
+    margin-bottom: 10px;
   }
 }
 
