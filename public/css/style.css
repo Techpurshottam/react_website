@@ -2093,6 +2093,9 @@ ul.social-icon li a {
 /****************************************** Footer Css End *****************************************/
 
 @media screen and (max-width: 767px) {
+  .row.top-footer {
+    margin-top: 0px;
+  }
   ul.nav.navbar-nav.nav-flex-icons.ml-auto li a i {
     font-size: 11px;
   }
@@ -2105,6 +2108,7 @@ ul.social-icon li a {
   .row.top-footer img {
     width: 100%;
   }
+
   header.fixed-top {
     text-align: center;
   }
