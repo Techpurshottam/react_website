@@ -29,7 +29,7 @@ function Advantage() {
                 <a className="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i className="fa fa-user" /></a>
                 <div className="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownMenuLink">
                   <p>I have an Abilis account.</p>
-                  <a className="dropdown-item" href="#">How To Join</a>
+                  <a className="dropdown-item" href="#">How To Join Table</a>
                   <a className="dropdown-item" href="#">Another action</a>
                   <a className="dropdown-item" href="#">Something else here</a>
                 </div>
